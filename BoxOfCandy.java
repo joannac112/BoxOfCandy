@@ -1,3 +1,5 @@
+import javax.sound.sampled.SourceDataLine;
+
 public class BoxOfCandy
 {
     /** box contains at least one row and is initialized in the constructor. */
@@ -12,7 +14,7 @@ public class BoxOfCandy
             for (int col = 0; col < box[0].length; col++){
                 s += box[row][col] + " ";
             }
-            s += "/n";
+            s += " ";
         }
         return s;
     }
